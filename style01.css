@@ -16,8 +16,8 @@
 
 #options {
   display: flex;
-  flex-direction: row; /* 横向きにする */
-  justify-content: center; /* 中央揃え */
+  flex-direction: column;
+  align-items: center;
 }
 
 .option {
