@@ -7,6 +7,7 @@ let quizData = [];
 function startQuiz() {
   currentQuestion = 0;
   score = 0;
+  document.body.classList.add('animate'); // アニメーションを追加
   loadQuizData();
 }
 

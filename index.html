@@ -73,7 +73,18 @@
       transition: background-color 0.3s ease;
     }
 
-    a:hover {
+    .external-link {
+      display: block;
+      padding: 15px;
+      background-color: #1a1a1a;
+      color: #ffcc00;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .external-link:hover {
       background-color: #333;
     }
   </style>
@@ -81,20 +92,20 @@
 </head>
 <body>
   <header>
-    <h1>なぞＱサイト</h1>
+    <h1><a href="./index.html">なぞＱサイト</a></h1>
   </header>
   <main>
     <section>
       <h2>かんたんなぞなぞ</h2>
-      <a href="./quiz01.html">トライする</a>
+      <a href="./quiz01.html" class="external-link">トライする</a>
     </section>
     <section>
       <h2>ふつうなぞなぞ</h2>
-      <a href="">トライする<br>（じゅんびちゅう）</a>
+      <a href="" class="external-link">トライする<br>（じゅんびちゅう）</a>
     </section>
     <section>
       <h2>むずかしいなぞなぞ</h2>
-      <a href="">トライする<br>（じゅんびちゅう）</a>
+      <a href="" class="external-link">トライする<br>（じゅんびちゅう）</a>
     </section>
   </main>
 </body>
