@@ -1,6 +1,7 @@
 let currentQuestion = 0;
 let score = 0;
 let isQuizInProgress = true; // クイズが進行中かどうかの状態を管理
+let QUIZ_NUM = 5; // この数の分だけクイズを出す
 
 let quizData = [];
 
@@ -23,9 +24,9 @@ function loadQuizData() {
 }
 
 function selectRandomQuestions() {
-  // クイズデータからランダムに3つ選ぶ
+  // クイズデータからランダムに選ぶ
   const selectedIndexes = [];
-  while (selectedIndexes.length < 3) {
+  while (selectedIndexes.length < QUIZ_NUM) {
     const randomIndex = Math.floor(Math.random() * quizData.length);
     if (!selectedIndexes.includes(randomIndex)) {
       selectedIndexes.push(randomIndex);
